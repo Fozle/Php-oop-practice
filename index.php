@@ -1,12 +1,19 @@
 <?php
-class car{
-    public $name ="Car Name";
-   public function getNewCar() {
 
-    return $this->name;
-   }
+class student{
+    public $name;
+    function set_Name($str){
+        $this->name=$str;
+    }
+    function out_put(){
+       return $this->name;
+    }
 }
 
-$bmw = new car();
-$bmw->name = "BMW Car";
-echo $bmw->name;
+$obj=new student();
+$obj1=new student();
+$obj->set_Name("Fozle Arafat 1");
+echo $obj->out_put();
+$obj1->set_Name("IOT STUdent");
+echo "<br/>". $obj1->out_put();
+?>
